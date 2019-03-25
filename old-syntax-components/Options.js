@@ -1,7 +1,8 @@
 import React from 'react';
 import Option from "./Option";
 
-const Options = (props) => (
+const Options = (props) => {
+  return (
     <div>
       <button onClick={props.handleDeleteOptions}>Remove All</button>
       {props.options.length === 0 && <p>Please feed the tickle monster</p>}
@@ -16,5 +17,6 @@ const Options = (props) => (
       }
     </div>
   );
+};
 
 export default Options;

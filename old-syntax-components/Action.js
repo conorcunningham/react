@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Action = (props) => (
+const Action = (props) => {
+  return (
     <div>
       <button
         onClick={props.handlePick}
@@ -9,5 +10,6 @@ const Action = (props) => (
       </button>
     </div>
   );
+};
 
 export default Action;
